@@ -1,19 +1,25 @@
 /*By Artin Moghadasi
 @Artin.Projects
 */
+
 #include <iostream>
 #include <string.h>
 #include <time.h>
 using namespace std;
+
 int main()
 {
+    
     cout<<"WELCOME TO NUMBER GUESSING GAME!"<<endl;
+    
     while (true)
     {
+        
         int guess,num,tries;
         string choice;
-        num = (rand()%100)+1;
         srand(time(0));
+        num = (rand()%100)+1;
+        
         do
         {
             cout<< "Guess:";
